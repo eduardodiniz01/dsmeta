@@ -1,5 +1,5 @@
-import logo from '../../assets/img/logo.svg'
-import './styles.css'
+import logo from '../../assets/img/logo.svg';
+import './styles.css';
 
 function Header() {
     return( 
@@ -9,11 +9,11 @@ function Header() {
             <h1>EDMeta</h1>
             <p>
               Desenvolvido por 
-              <a href="https://www.instagram.com/edu_diniz2953"> @edu_diniz2953</a>
+              <a href="https://www.instagram.com/edu_diniz2953"> Eduardo Diniz</a>
             </p>
         </div>
     </header>
     )
    }
    
-   export default Header
+   export default Header;
