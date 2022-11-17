@@ -6,7 +6,7 @@ import './styles.css';
 
 function SalesCard() {
     
-<<<<<<< HEAD
+
     const d = new Date();
     const currMonth = d.getMonth();
     const currYear = d.getFullYear();
@@ -40,7 +40,7 @@ function SalesCard() {
             />
           </div>
         </div>
-=======
+            
     const min = new Date(new Date().setDate(new Date().getDate() - 365));
     const max = new Date();
 
@@ -68,7 +68,6 @@ function SalesCard() {
                     />
                 </div>
             </div>
->>>>>>> 2e58ec4ee8ba928781d701f8cd91a20df9268422
 
             <div>
                 <table className="dsmeta-sales-table">
