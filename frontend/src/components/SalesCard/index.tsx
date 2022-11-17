@@ -6,6 +6,7 @@ import './styles.css';
 
 function SalesCard() {
     
+<<<<<<< HEAD
     const d = new Date();
     const currMonth = d.getMonth();
     const currYear = d.getFullYear();
@@ -39,6 +40,35 @@ function SalesCard() {
             />
           </div>
         </div>
+=======
+    const min = new Date(new Date().setDate(new Date().getDate() - 365));
+    const max = new Date();
+
+    const [minDate, setMinDate] = useState(min);
+    const [maxDate, setMaxDate] = useState(max);
+
+    return (
+        <div className="dsmeta-card">
+            <h2 className="dsmeta-sales-title">Vendas</h2>
+            <div>
+                <div className="dsmeta-form-control-container">
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => setMinDate(date)}
+                        className="dsmeta-form-control"
+                        dateFormat="dd/MM/yyyy"
+                    />
+                </div>
+                <div className="dsmeta-form-control-container">
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => setMaxDate(date)}
+                        className="dsmeta-form-control"
+                        dateFormat="dd/MM/yyyy"
+                    />
+                </div>
+            </div>
+>>>>>>> 2e58ec4ee8ba928781d701f8cd91a20df9268422
 
             <div>
                 <table className="dsmeta-sales-table">
